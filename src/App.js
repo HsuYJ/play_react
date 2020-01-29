@@ -1,10 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Board from 'components/board';
+import logo from 'logo.svg';
+import 'App.scss';
+console.log(process.env.NODE_PATH);
+console.log(process.env.NODE_ENV);
+console.log(process.env.REACT_APP_gg);
 function App() {
   return (
     <div className="App">
+      <section className="mainSection">
+        <Board />
+      </section>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
